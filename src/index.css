@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: rgb(136, 135, 135);
+  overflow-x: hidden;
+}
+
+.slick-prev:hover:before {
+  color: black;
+}
+
+.slick-next:hover:before {
+  color: black;
+}
+
+.dropdown-menu {
+  z-index: 50 !important; /* Assegura que o dropdown está no topo */
+}
+
+.dropdown-toggle {
+  background-color: black;
+  border: 1px white solid;
+  transition: 1s ease-in-out;
+}
+
+.dropdown-toggle:hover {
+  background-color: aliceblue;
+  color: black;
+  border: 1px rgb(58, 58, 58);
+}
+
+.dropdown-toggle:active,
+.dropdown-toggle:focus {
+  background-color: rgb(245, 241, 241) !important;
+  color: black;
+}
+
+.dropdown-item:hover {
+  background-color: rgb(158, 158, 158);
+  color: rgb(255, 255, 255);
+}
+
+.slick-track {
+  display: flex !important; /* Força o uso de flexbox */ /* Espaçamento entre os itens */
+}
